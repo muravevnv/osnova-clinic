@@ -1,0 +1,28 @@
+.news__slider-author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.news__slider-author-img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: url("../img/doctors/bg-img.png") bottom center / 100% auto no-repeat;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.news__slider-author-info {
+  color: unset;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #4E4D4D;
+}
