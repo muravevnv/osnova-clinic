@@ -1042,6 +1042,7 @@ a.dir-hero__price-btn:hover {
   gap: 8px;
 }
 
+
 .dir-tech__controls {
   width: 100px;
   flex-shrink: 0;
@@ -1062,6 +1063,12 @@ a.dir-hero__price-btn:hover {
   overflow: hidden;
 }
 
+@media (max-width: 1023.98px) {
+  .dir-tech__slider .swiper-wrapper {
+    align-items: stretch;
+  }
+}
+
 .dir-tech__title {
   margin-bottom: 10px;
   padding: 0;
@@ -1070,7 +1077,6 @@ a.dir-hero__price-btn:hover {
 @media (max-width: 767.98px) {
   .dir-tech__title {
     margin-bottom: 8px;
-    min-height: 60px;
   }
 }
 
@@ -1081,13 +1087,7 @@ a.dir-hero__price-btn:hover {
 }
 
 @media (max-width: 1208px) {
-  .dir-tech__subtitle {
-    min-height: 99px;
-  }
 
-  .dir-tech-slide__text {
-    min-height: 150px;
-  }
 }
 
 @media (max-width: 767.98px) {
@@ -1108,6 +1108,12 @@ a.dir-hero__price-btn:hover {
 @media (max-width: 1439.98px) {
   .dir-tech-slide__head {
     padding: 0;
+  }
+}
+
+@media(max-width: 1023.98px) {
+  .dir-tech-slide {
+    height: auto;
   }
 }
 
@@ -1210,6 +1216,7 @@ a.dir-hero__price-btn:hover {
 @media (max-width: 1023.98px) {
   .dir-tech-slide__desc .show-more-btn {
     display: inline-flex;
+    margin-top: auto;
   }
 }
 
