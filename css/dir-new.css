@@ -696,4 +696,107 @@
   display: block;
   width: 24px;
   height: 24px;
+}
+
+.dir-content__benefits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 100px;
+}
+@media (max-width: 992px) {
+  .dir-content__benefits {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: flex-start;
+    overflow-x: auto;
+  }
+  .dir-content__benefits::-webkit-scrollbar {
+    display: none;
+  }
+}
+.dir-content__benefit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .dir-content__benefit {
+    gap: 8px;
+    min-width: 160px;
+  }
+}
+.dir-content__benefit-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #F6F7F9;
+}
+@media (max-width: 992px) {
+  .dir-content__benefit-icon {
+    width: 48px;
+    height: 48px;
+  }
+}
+.dir-content__benefit-icon img {
+  display: block;
+  width: 60%;
+}
+.dir-content__benefit-title {
+  font-size: 16px;
+  color: #4E4D4D;
+  line-height: 1.4;
+}
+@media (max-width: 992px) {
+  .dir-content__benefit-title {
+    font-size: 14px;
+  }
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+.tooltip__btn {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+@media (any-hover: hover) {
+  .tooltip__btn:hover + .tooltip__cloude {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+}
+.tooltip__cloude {
+  position: absolute;
+  bottom: 28px;
+  left: -5px;
+  min-width: 185px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background-color: #729132;
+  color: #FFFFFF;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 5;
+}
+.tooltip__cloude::before {
+  position: absolute;
+  display: block;
+  content: url("../img/icons/cloude-pin.svg");
+  width: 4px;
+  height: 8px;
+  left: 13px;
+  bottom: 5px;
 }/*# sourceMappingURL=dir-new.css.map */
