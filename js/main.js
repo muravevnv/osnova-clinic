@@ -78,28 +78,42 @@ $(document).ready(function () {
   });
 
   // Функция для выравнивания высоты элементов в рамках одного ряда    // Функция для выравнивания высоты элементов
-    function alignHeights(selector) {
-        let maxHeight = 0;
-        
-        // Сначала сбрасываем высоту, чтобы получить реальную высоту содержимого
-        $(selector).css('height', 'auto');
-        
-        // Находим максимальную высоту
-        $(selector).each(function() {
-            const height = $(this).outerHeight();
-            if (height > maxHeight) {
-                maxHeight = height;
-            }
-        });
-        
-        // Устанавливаем максимальную высоту для всех элементов
-        $(selector).css('height', maxHeight);
-    }
-    
-    // Выравниваем заголовки
-    alignHeights('.js-tech-slide-title'); // замените на ваш класс заголовков
-    // Выравниваем подзаголовки
-    alignHeights('.js-tech-slide-subtitle'); // замените на ваш класс подзаголовков
-    // Выравниваем описания
-    alignHeights('.js-tech-slide-desc'); // замените на ваш класс описаний
+  function alignHeights(selector) {
+    let maxHeight = 0;
+
+    // Сначала сбрасываем высоту, чтобы получить реальную высоту содержимого
+    $(selector).css("height", "auto");
+
+    // Находим максимальную высоту
+    $(selector).each(function () {
+      const height = $(this).outerHeight();
+      if (height > maxHeight) {
+        maxHeight = height;
+      }
+    });
+
+    // Устанавливаем максимальную высоту для всех элементов
+    $(selector).css("height", maxHeight);
+  }
+
+  // Выравниваем заголовки
+  alignHeights(".js-tech-slide-title"); // замените на ваш класс заголовков
+  // Выравниваем подзаголовки
+  alignHeights(".js-tech-slide-subtitle"); // замените на ваш класс подзаголовков
+  // Выравниваем описания
+  alignHeights(".js-tech-slide-desc"); // замените на ваш класс описаний
+
+  if (document.querySelector(".js-ins-companies-slider")) {
+    const servicesSlider = new Swiper(".js-ins-companies-slider", {
+      slidesPerView: "auto",
+      spaceBetween: 24,
+      loop: true,
+      speed: 800,
+      breakpoints: {
+        1024: {
+          spaceBetween: 50,
+        },
+      },
+    });
+  }
 });
