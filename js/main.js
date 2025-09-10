@@ -116,4 +116,54 @@ $(document).ready(function () {
       },
     });
   }
+
+  $("[data-fancybox]").fancybox({
+    afterClose: function (instance, slide) {
+      // Проверяем, была ли нажата кнопка с data-scroll-to
+    },
+  });
+
+  $("[data-scroll-to]").on("click", function (e) {
+    e.preventDefault();
+    const $this = $(this);
+    const target = $this.attr("data-scroll-to");
+    const $target = $("#" + target);
+    $("html, body").animate(
+      {
+        scrollTop: $target.offset().top,
+      },
+      800
+    );
+  });
+
+  if (document.querySelector(".js-about-slider")) {
+    const aboutSlider = new Swiper(".js-about-slider", {
+      slidesPerView: "auto",
+      spaceBetween: 16,
+      speed: 800,
+      initialSlide: 1,
+      breakpoints: {
+        1024: {
+          spaceBetween: 40,
+        },
+      },
+    });
+  }
+
+  if (document.querySelector(".js-gallery-slider")) {
+    const gallerySlider = new Swiper(".js-gallery-slider", {
+      slidesPerView: 1,
+      spaceBetween: 16,
+      speed: 800,
+      navigation: {
+        prevEl: ".js-gallery-slider-prev",
+        nextEl: ".js-gallery-slider-next",
+      },
+      breakpoints: {
+        1024: {
+          spaceBetween: 30,
+        },
+      },
+    });
+  }
 });
