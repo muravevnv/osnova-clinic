@@ -166,4 +166,26 @@ $(document).ready(function () {
       },
     });
   }
+
+  $("[data-scroll-link]").on("click", function (e) {
+
+    const headerHeight = $('.header').outerHeight()
+    console.log(headerHeight)
+    e.preventDefault();
+
+    // Получаем ID целевой секции из href атрибута
+    var targetId = $(this).attr("href");
+    var $targetElement = $(targetId);
+
+    if ($targetElement.length) {
+      var scrollPosition = $targetElement.offset().top - headerHeight - 20;
+
+      $("html, body").animate(
+        {
+          scrollTop: scrollPosition,
+        },
+        800
+      );
+    }
+  });
 });

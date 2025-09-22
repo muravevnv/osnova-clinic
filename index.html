@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/old-styles.css">
   <link rel="stylesheet" href="css/news__slider.css">
   <link rel="stylesheet" href="css/current-styles.css">
-  
+
   <title>Описание направления</title>
 </head>
 
@@ -196,10 +196,10 @@
           <button type="button" class="show-more-btn js-show-more-btn">Показать всё</button>
         </div>
       </div>
-      <div class="dir-content__inner">
-        <div class="dir-content__title h3">
+      <div class="dir-content__inner" id="dir-symptoms" data-scroll-section>
+        <a href="#dir-symptoms" data-scroll-link class="dir-content__title h3">
           Основные симптомы при болезни глаз
-        </div>
+        </a>
         <div class="dir-content__main">
           <div class="dir-text js-show-more-text">
             <p>
@@ -231,10 +231,10 @@
           <button type="button" class="show-more-btn js-show-more-btn">Показать всё</button>
         </div>
       </div>
-      <div class="dir-content__inner">
-        <div class="dir-content__title h3">
+      <div class="dir-content__inner" id="dir-reasons" data-scroll-section>
+        <a href="#dir-reasons" data-scroll-link class="dir-content__title h3">
           Поводы обращения <br> к врачу-офтальмологу
-        </div>
+        </a>
         <div class="dir-content__main">
           <div class="dir-reasons js-show-more-text">
             <a href="#" class="dir-reasons-badge">Авторефрактометрия</a>
@@ -257,10 +257,10 @@
           <button type="button" class="show-more-btn js-show-more-btn">Показать всё</button>
         </div>
       </div>
-      <div class="dir-content__inner">
-        <div class="dir-content__title h3">
+      <div class="dir-content__inner" id="dir-faq" data-scroll-section>
+        <a href="#dir-faq" data-scroll-link class="dir-content__title h3">
           Важная информация
-        </div>
+        </a>
         <div class="dir-content__main">
           <div class="faq-list">
             <div class="faq-item">
@@ -741,8 +741,7 @@
           <a href="about/news/pyataya-ezhegodnaya-premiya-«doktor-piter»"
             class="news__slider__item swiper-slide grey__off-bkg swiper-slide-active">
             <div class="news__slider__img">
-              <img src="./img/consult.jpg"
-                alt="Пятая ежегодная премия «Доктор Питер»">
+              <img src="./img/consult.jpg" alt="Пятая ежегодная премия «Доктор Питер»">
             </div>
             <div class="news__slider__title flex flex__sb">
               <div class="h4 grey__dark">Пятая ежегодная премия «Доктор Питер»</div>
@@ -757,11 +756,9 @@
               </div>
             </div>
           </a>
-          <a href="about/news/detskij-oftalmolog"
-            class="news__slider__item swiper-slide grey__off-bkg">
+          <a href="about/news/detskij-oftalmolog" class="news__slider__item swiper-slide grey__off-bkg">
             <div class="news__slider__img">
-              <img src="./img/consult.jpg"
-                alt="Детский офтальмолог в Санкт-Петербурге">
+              <img src="./img/consult.jpg" alt="Детский офтальмолог в Санкт-Петербурге">
             </div>
             <div class="news__slider__title flex flex__sb">
               <div class="h4 grey__dark">Готовимся к школе. Офтальмология.</div>
@@ -920,6 +917,7 @@
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+  <script src="js/fancybox.js"></script>
   <script src="js/main.js"></script>
 </body>
 

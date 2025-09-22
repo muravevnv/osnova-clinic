@@ -2557,3 +2557,20 @@ text-align:justify;
     height: 20px;
     vertical-align: middle; 
 }
+
+.dir-content__inner {
+  align-items: flex-start;
+}
+
+
+.dir-content__title {
+  position: sticky;
+  top: 120px;
+}
+
+@media(max-width: 767px) {
+  .dir-content__title {
+    position: static;
+    pointer-events: none;
+  }
+}
