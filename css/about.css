@@ -678,4 +678,63 @@
   .main__reviews {
     overflow: hidden;
   }
+}
+.dir-nav__head {
+  padding-left: 48px;
+  margin-bottom: 28px;
+}
+@media (max-width: 1023px) {
+  .dir-nav__head {
+    padding-left: 0;
+  }
+}
+.dir-nav__links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+@media (max-width: 1023px) {
+  .dir-nav__links {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
+.dir-nav__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 23px 12px;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #4E4D4D;
+  font-weight: 700;
+  border: 1px solid #ECEFF1;
+  border-radius: 24px;
+  cursor: pointer;
+}
+@media (max-width: 1023px) {
+  .dir-nav__link {
+    padding: 15px 12px;
+    font-size: 14px;
+    border-radius: 12px;
+  }
+}
+.dir-nav__link img {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+@media (max-width: 1023px) {
+  .dir-nav__link img {
+    width: 16px;
+    height: 16px;
+  }
+}
+@media (any-hover: hover) {
+  .dir-nav__link:hover {
+    background-color: #ECEFF1;
+    color: #4E4D4D;
+  }
 }/*# sourceMappingURL=about.css.map */
