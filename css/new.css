@@ -385,4 +385,243 @@
 }
 .ins-companies-slider__item.swiper-slide {
   width: auto;
+}
+
+.diagnostics {
+  padding-top: 164px;
+}
+@media (max-width: 767px) {
+  .diagnostics {
+    padding-top: 100px;
+  }
+}
+.diagnostics__directions-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+@media (max-width: 1280px) {
+  .diagnostics__directions-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .diagnostics__directions-list .diagnostics__direction {
+    min-height: 220px;
+  }
+}
+@media (max-width: 560px) {
+  .diagnostics__directions-list {
+    grid-template-columns: 1fr;
+  }
+}
+.diagnostics__links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+.diagnostics__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  color: #4E4D4D;
+  background-color: #FFFFFF;
+  border-radius: 24px;
+}
+.diagnostics__link img {
+  display: block;
+  width: 92px;
+  height: 92px;
+  aspect-ratio: 1/1;
+}
+.diagnostics__link span {
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+.dir-all__title {
+  padding-top: 0;
+}
+.dir-all__list {
+  -moz-column-count: 4;
+       column-count: 4;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  margin-top: -12px;
+}
+@media (max-width: 1280px) {
+  .dir-all__list {
+    -moz-column-count: 2;
+         column-count: 2;
+  }
+}
+@media (max-width: 767px) {
+  .dir-all__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.dir-all__section {
+  position: relative;
+  padding-left: 27px;
+  padding-top: 12px;
+}
+.dir-all__section-letter {
+  position: absolute;
+  top: 12px;
+  left: 0;
+}
+.dir-all__section-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+.dir-all__section-link {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #91B83F;
+}
+@media (any-hover: hover) {
+  .dir-all__section-link:hover {
+    text-decoration: underline;
+  }
+}
+
+.dir-section--top {
+  padding-top: 100px !important;
+}
+@media (max-width: 1279.98px) {
+  .dir-section--top {
+    padding-top: 60px !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .dir-section--top {
+    padding-top: 44px !important;
+  }
+}
+
+.dir-doctors__inner {
+  display: flex;
+  flex-direction: column;
+}
+.dir-doctors__filters {
+  margin-bottom: 64px;
+  padding: 28px;
+  border-radius: 24px;
+  background-color: #F6F7F9;
+}
+@media (max-width: 767.98px) {
+  .dir-doctors__filters {
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+  }
+}
+.dir-doctors__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 128px 8px;
+  margin-top: 84px;
+}
+@media (max-width: 1199px) {
+  .dir-doctors__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767.98px) {
+  .dir-doctors__list {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 0;
+  }
+}
+
+.filters-panel {
+  display: grid;
+  grid-template-columns: 240px 1fr 210px;
+  gap: 8px;
+}
+@media (max-width: 991.98px) {
+  .filters-panel {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.dir-doctor-card__info {
+  padding: 0 0 20px 0;
+}
+
+.air-datepicker-cell.-selected-.-focus-,
+.air-datepicker-cell.-selected- {
+  background-color: #91B83F;
+}
+
+.air-datepicker-cell.-current- {
+  color: #91B83F;
+}
+
+.air-datepicker-cell.-selected-.-current- {
+  background-color: #91B83F;
+}
+
+.form__input--datepicker {
+  padding-right: 48px;
+  background-image: url("../img/icons/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 24px;
+}
+.form__input--search {
+  padding-left: 48px;
+  background-image: url("../img/icons/search.svg");
+  background-repeat: no-repeat;
+  background-position: left 16px center;
+  background-size: 24px;
+}
+.form__input--search + .form__label {
+  left: 48px;
+}
+
+.promos__inner {
+  display: grid;
+  grid-template-columns: 328px 1fr;
+  gap: 24px;
+}
+@media (max-width: 1199.98px) {
+  .promos__inner {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.promos__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px 8px;
+}
+@media (max-width: 767.98px) {
+  .promos__list {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+.page-hero-banner__btn {
+  margin-top: 24px;
+}
+@media (max-width: 1199.98px) {
+  .page-hero-banner__img {
+    max-width: 320px;
+  }
+}
+
+.useful-info__title span {
+  display: inline;
+}
+
+.news__slider__video {
+  min-height: 440px;
 }/*# sourceMappingURL=new.css.map */

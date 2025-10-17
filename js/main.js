@@ -168,9 +168,8 @@ $(document).ready(function () {
   }
 
   $("[data-scroll-link]").on("click", function (e) {
-
-    const headerHeight = $('.header').outerHeight()
-    console.log(headerHeight)
+    const headerHeight = $(".header").outerHeight();
+    console.log(headerHeight);
     e.preventDefault();
 
     // Получаем ID целевой секции из href атрибута
@@ -188,4 +187,17 @@ $(document).ready(function () {
       );
     }
   });
+
+  function initDatepicker() {
+    const datepickers = document.querySelectorAll("[data-datepicker]");
+
+    if (datepickers.length > 0) {
+      datepickers.forEach((item) => {
+        new AirDatepicker(item, {
+        });
+      });
+    }
+  }
+
+  initDatepicker();
 });
