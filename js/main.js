@@ -167,6 +167,20 @@ $(document).ready(function () {
     });
   }
 
+  if (document.querySelector(".js-steps-slider")) {
+    const stepsSlider = new Swiper(".js-steps-slider", {
+      slidesPerView: 1,
+      spaceBetween: 16,
+      speed: 800,
+      breakpoints: {
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 56,
+        },
+      },
+    });
+  }
+
   $("[data-scroll-link]").on("click", function (e) {
     const headerHeight = $(".header").outerHeight();
     console.log(headerHeight);
@@ -193,8 +207,7 @@ $(document).ready(function () {
 
     if (datepickers.length > 0) {
       datepickers.forEach((item) => {
-        new AirDatepicker(item, {
-        });
+        new AirDatepicker(item, {});
       });
     }
   }
