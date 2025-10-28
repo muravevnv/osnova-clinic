@@ -213,4 +213,8 @@ $(document).ready(function () {
   }
 
   initDatepicker();
+
+  $('.float-banner__close').click(function () {
+    $('.float-banner').fadeOut();
+  });
 });
