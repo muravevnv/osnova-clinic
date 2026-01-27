@@ -1299,6 +1299,22 @@
     background: transparent;
   }
 }
+.dir-steps__pagination {
+  display: none;
+}
+@media (max-width: 1023.98px) {
+  .dir-steps__pagination {
+    display: block;
+    margin-top: 16px;
+  }
+  .dir-steps__pagination .swiper-pagination {
+    position: static;
+    background-color: #F6F7F9;
+  }
+  .dir-steps__pagination .swiper-pagination-progressbar-fill {
+    background-color: #91b83f;
+  }
+}
 .dir-steps__head {
   display: flex;
   align-items: center;

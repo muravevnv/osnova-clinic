@@ -178,6 +178,10 @@ $(document).ready(function () {
           spaceBetween: 56,
         },
       },
+      pagination: {
+        el: ".js-steps-slider-pagination",
+        type: "progressbar",
+      },
     });
   }
 

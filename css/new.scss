@@ -1365,6 +1365,24 @@
     }
   }
 
+  &__pagination {
+    display: none;
+
+    @media(max-width: 1023.98px) {
+      display: block;
+      margin-top: 16px;
+
+      .swiper-pagination {
+        position: static;
+        background-color: #F6F7F9;
+      }
+
+      .swiper-pagination-progressbar-fill {
+        background-color: #91b83f;
+      }
+    }
+  }
+
   &__head {
     display: flex;
     align-items: center;
