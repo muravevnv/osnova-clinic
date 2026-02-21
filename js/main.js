@@ -132,7 +132,7 @@ $(document).ready(function () {
       {
         scrollTop: $target.offset().top,
       },
-      800
+      800,
     );
   });
 
@@ -185,6 +185,24 @@ $(document).ready(function () {
     });
   }
 
+  if (document.querySelector(".js-blog-banner-slider")) {
+    const blogBannerSlider = new Swiper(".js-blog-banner-slider", {
+      slidesPerView: 1.1,
+      spaceBetween: 16,
+      speed: 800,
+      loop: true,
+      breakpoints: {
+        768: {
+          slidesPerView: 1,
+        }
+      },
+      navigation: {
+        prevEl: ".js-blog-banner-slider-prev",
+        nextEl: ".js-blog-banner-slider-next",
+      }
+    });
+  }
+
   $("[data-scroll-link]").on("click", function (e) {
     const headerHeight = $(".header").outerHeight();
     console.log(headerHeight);
@@ -201,7 +219,7 @@ $(document).ready(function () {
         {
           scrollTop: scrollPosition,
         },
-        800
+        800,
       );
     }
   });
@@ -218,7 +236,7 @@ $(document).ready(function () {
 
   initDatepicker();
 
-  $('.float-banner__close').click(function () {
-    $('.float-banner').fadeOut();
+  $(".float-banner__close").click(function () {
+    $(".float-banner").fadeOut();
   });
 });

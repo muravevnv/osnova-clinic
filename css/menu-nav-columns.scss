@@ -1,0 +1,30 @@
+.menu-nav-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+
+  @media(max-width: 1023.98px) {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  &__item {
+
+    &-title {
+      font-size: 17px;
+      line-height: 1.25;
+      font-weight: 700;
+      padding-bottom: 12px;
+      padding-top: 0;
+      color: rgb(59, 69, 77);
+    }
+
+    &-links {
+
+      .topnav__menu__li {
+        padding-bottom: 8px;
+      }
+    }
+  }
+}

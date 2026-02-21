@@ -1,0 +1,383 @@
+.pricelist__item-link {
+  color: #91B83F;
+}
+
+@media (max-width: 767.98px) {
+  .dir-tech__head-line {
+    width: 100px;
+  }
+}
+.dir-tech__head-title {
+  font-size: 44px;
+  line-height: 1.25;
+  font-weight: 700;
+  padding: 0;
+}
+@media (max-width: 767.98px) {
+  .dir-tech__head-title {
+    font-size: 24px;
+  }
+}
+
+.dir-services-card__desc {
+  color: #4E4D4D;
+}
+.dir-services-card__desc p {
+  font-size: 16px;
+  margin: 0 0 12px;
+  font-weight: 500;
+}
+.dir-services-card__desc ul li {
+  display: block;
+  position: relative;
+  padding-left: 16px;
+}
+.dir-services-card__desc ul li:not(:last-child) {
+  margin-bottom: 4px;
+}
+.dir-services-card__desc ul li::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  background-color: currentColor;
+  border-radius: 50%;
+}
+
+.dir-pic {
+  width: 100%;
+}
+.dir-pic__img {
+  display: block;
+  width: 100%;
+}
+.dir-pic__img img {
+  display: block;
+  width: 100%;
+}
+
+.flebology-services__inner {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 8px;
+}
+@media (max-width: 767.98px) {
+  .flebology-services__inner {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.flebology-services__main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: dense;
+  gap: 8px;
+}
+@media (max-width: 767.98px) {
+  .flebology-services__main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.flebology-services__card:first-of-type {
+  grid-row: span 2;
+}
+
+.flebology-services-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  z-index: 1;
+  min-height: 200px;
+}
+@media (max-width: 767.98px) {
+  .flebology-services-card {
+    padding: 16px;
+    border-radius: 12px;
+    min-height: 160px;
+  }
+}
+.flebology-services-card__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.flebology-services-card__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.flebology-services-card__title {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+@media (max-width: 767.98px) {
+  .flebology-services-card__title {
+    font-size: 16px;
+  }
+}
+.flebology-services-card__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.flebology-services-card__list-item {
+  display: inline-block;
+  width: auto;
+  background-color: #FFFFFF;
+  padding: 12px 24px;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #91B83F;
+  border-radius: 40px;
+}
+@media (max-width: 767.98px) {
+  .flebology-services-card__list-item {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
+
+.discount-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  border-radius: 16px;
+  background-color: #F6F7F9;
+}
+@media (max-width: 767.98px) {
+  .discount-card {
+    padding: 16px;
+    border-radius: 16px;
+  }
+}
+.discount-card__img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 356/240;
+  border-radius: 16px;
+  overflow: hidden;
+}
+@media (max-width: 767.98px) {
+  .discount-card__img {
+    border-radius: 12px;
+  }
+}
+.discount-card__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.discount-card__label {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  padding: 8px 12px;
+  background-color: #8798A5;
+  color: #FFFFFF;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 1.4;
+  z-index: 1;
+}
+@media (max-width: 767.98px) {
+  .discount-card__label {
+    top: 24px;
+    left: 24px;
+  }
+}
+.discount-card__title {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+@media (max-width: 767.98px) {
+  .discount-card__title {
+    font-size: 16px;
+  }
+}
+.discount-card__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: auto;
+}
+.discount-card__price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+@media (max-width: 767.98px) {
+  .discount-card__price {
+    gap: 4px;
+  }
+}
+.discount-card__price-current {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+@media (max-width: 767.98px) {
+  .discount-card__price-current {
+    font-size: 16px;
+  }
+}
+.discount-card__price-old {
+  font-size: 14px;
+  line-height: 1.25;
+  text-decoration: line-through;
+  color: #8798A5;
+}
+@media (max-width: 767.98px) {
+  .discount-card__price-old {
+    font-size: 12px;
+  }
+}
+
+.service-row-card {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  gap: 28px;
+  padding: 24px;
+  background-color: #F6F7F9;
+  border-radius: 16px;
+}
+@media (max-width: 767.98px) {
+  .service-row-card {
+    align-items: flex-start;
+    padding: 16px;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+}
+.service-row-card__img {
+  display: block;
+  aspect-ratio: 1/1;
+  width: 140px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+@media (max-width: 767.98px) {
+  .service-row-card__img {
+    max-width: 100px;
+    width: 100%;
+  }
+}
+.service-row-card__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.service-row-card__info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+@media (max-width: 767.98px) {
+  .service-row-card__info {
+    display: contents;
+  }
+}
+.service-row-card__title {
+  font-size: 16px;
+  line-height: 1.3;
+  color: #4E4D4D;
+}
+@media (max-width: 767.98px) {
+  .service-row-card__title {
+    font-size: 14px;
+  }
+}
+.service-row-card__price {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+@media (max-width: 767.98px) {
+  .service-row-card__price {
+    font-size: 16px;
+  }
+}
+.service-row-card__bottom {
+  width: 100%;
+  padding-top: 16px;
+  border-top: 1px solid #E0E4E8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+@media (max-width: 767.98px) {
+  .service-row-card__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 12px;
+    gap: 12px;
+  }
+}
+.service-row-card__action {
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+}
+@media (max-width: 767.98px) {
+  .service-row-card__action {
+    width: 100%;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+.service-row-card__date {
+  padding: 10px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 15px;
+  line-height: 1.32;
+  font-weight: 500;
+  color: #91b83f;
+  background-color: #ffffff;
+  border-radius: 40px;
+}
+@media (max-width: 767.98px) {
+  .service-row-card__date {
+    width: 100%;
+  }
+}
+@media (max-width: 767.98px) {
+  .service-row-card__btn {
+    width: 100%;
+  }
+}/*# sourceMappingURL=flebology.css.map */

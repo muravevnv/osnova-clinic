@@ -1,0 +1,23 @@
+.menu-nav-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+@media (max-width: 1023.98px) {
+  .menu-nav-columns {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+.menu-nav-columns__item-title {
+  font-size: 17px;
+  line-height: 1.25;
+  font-weight: 700;
+  padding-bottom: 12px;
+  padding-top: 0;
+  color: rgb(59, 69, 77);
+}
+.menu-nav-columns__item-links .topnav__menu__li {
+  padding-bottom: 8px;
+}/*# sourceMappingURL=menu-nav-columns.css.map */

@@ -600,7 +600,7 @@
 .promos__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 24px 8px;
+  gap: 20px;
 }
 @media (max-width: 767.98px) {
   .promos__list {
