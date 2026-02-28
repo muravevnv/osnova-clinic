@@ -1,15 +1,15 @@
 .visiting-reasons {
   width: 100%;
 }
-.visiting-reasons__grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.visiting-reasons__blocks {
+  display: flex;
+  align-items: stretch;
   gap: 8px;
 }
 @media (max-width: 1023.98px) {
-  .visiting-reasons__grid {
-    display: flex;
+  .visiting-reasons__blocks {
     flex-direction: column;
+    align-items: flex-start;
   }
 }
 .visiting-reasons__block {
@@ -20,6 +20,7 @@
   display: flex;
   align-items: flex-start;
   gap: 40px;
+  flex-grow: 1;
 }
 @media (max-width: 1023.98px) {
   .visiting-reasons__block {
