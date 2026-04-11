@@ -21,10 +21,9 @@
 
   <div class="doctors-appointment">
   <div class="doctors-appointment__wrapper">
-    <button type="button" class="doctors-appointment__close">
+    <button type="button" class="doctors-appointment__close" data-fancybox-close>
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M7 17L17 7" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-        <path d="M17 17L7 7" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.70757 7.29304C8.51897 7.11088 8.26637 7.01009 8.00417 7.01237C7.74197 7.01465 7.49116 7.11981 7.30575 7.30522C7.12034 7.49063 7.01517 7.74144 7.0129 8.00364C7.01062 8.26584 7.11141 8.51844 7.29357 8.70704L10.5866 12L7.29357 15.293C7.19806 15.3853 7.12188 15.4956 7.06947 15.6176C7.01706 15.7396 6.98947 15.8709 6.98832 16.0036C6.98717 16.1364 7.01247 16.2681 7.06275 16.391C7.11303 16.5139 7.18728 16.6255 7.28117 16.7194C7.37507 16.8133 7.48672 16.8876 7.60962 16.9379C7.73251 16.9881 7.86419 17.0134 7.99697 17.0123C8.12975 17.0111 8.26097 16.9836 8.38297 16.9311C8.50498 16.8787 8.61532 16.8026 8.70757 16.707L12.0006 13.414L15.2936 16.707C15.4822 16.8892 15.7348 16.99 15.997 16.9877C16.2592 16.9854 16.51 16.8803 16.6954 16.6949C16.8808 16.5095 16.986 16.2586 16.9882 15.9964C16.9905 15.7342 16.8897 15.4816 16.7076 15.293L13.4146 12L16.7076 8.70704C16.8897 8.51844 16.9905 8.26584 16.9882 8.00364C16.986 7.74144 16.8808 7.49063 16.6954 7.30522C16.51 7.11981 16.2592 7.01465 15.997 7.01237C15.7348 7.01009 15.4822 7.11088 15.2936 7.29304L12.0006 10.586L8.70757 7.29304Z" fill="currentColor"/>
       </svg>
     </button>
     <div class="doctors-appointment__head">
@@ -37,11 +36,11 @@
             <div class="steps__item-num">1</div>
             <div class="steps__item-title">Дата и время посещения</div>
           </div>
-          <div class="steps__item steps__item--current">
+          <div class="steps__item steps__item--completed">
             <div class="steps__item-num">2</div>
             <div class="steps__item-title">Услуга</div>
           </div>
-          <div class="steps__item">
+          <div class="steps__item steps__item--current">
             <div class="steps__item-num">3</div>
             <div class="steps__item-title">Пациент</div>
           </div>
@@ -129,9 +128,14 @@
                   </div>
                 </div>
                 <div class="form-row">
-                  <div class="form-group">
+                  <div class="form-group form-calendar">
                     <input type="text" class="form-control" placeholder=" ">
                     <label for="" class="form-label">Дата рождения</label>
+                    <div class="form-calendar__icon">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 1C7.55228 1 8 1.44772 8 2V3H16V2C16 1.44772 16.4477 1 17 1C17.5523 1 18 1.44772 18 2V3H18.6667C20.5076 3 22 4.51104 22 6.375V18.625C22 20.489 20.5076 22 18.6667 22H5.33333C3.49238 22 2 20.489 2 18.625V6.375C2 4.51104 3.49238 3 5.33333 3H6V2C6 1.44772 6.44772 1 7 1ZM5 8.08333C4.44772 8.08333 4 8.53105 4 9.08333V18.9167C4 19.515 4.51167 20 5.14286 20H18.8571C19.4883 20 20 19.515 20 18.9167V9.08333C20 8.53105 19.5523 8.08333 19 8.08333H5ZM7 11V13H9V11H7ZM11 11H13V13H11V11ZM15 11V13H17V11H15ZM17 15V17H15V15H17ZM13 15H11V17H13V15ZM9 15V17H7V15H9Z" fill="#8798A5"/>
+                      </svg>
+                    </div>
                   </div>
                 </div>
                 <div class="form-row">
