@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/gotham-pro-font@1.0.0/fonts.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/fancybox.css" />
+  <link rel="stylesheet" href="css/airdatepicker.min.css" />
+  <link rel="stylesheet" href="css/old-styles.css" />
+  <link rel="stylesheet" href="css/news__slider.css" />
+  <link rel="stylesheet" href="css/current-styles.css" />
+  <link rel="stylesheet" href="css/new.css" />
+  <link rel="stylesheet" href="css/article.css" />
+  <link rel="stylesheet" href="css/doctors-appointment.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header></header>
+
+  <div class="doctors-appointment">
+    <div class="doctors-appointment__wrapper">
+      <button type="button" class="doctors-appointment__close" data-fancybox-close>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M8.70757 7.29304C8.51897 7.11088 8.26637 7.01009 8.00417 7.01237C7.74197 7.01465 7.49116 7.11981 7.30575 7.30522C7.12034 7.49063 7.01517 7.74144 7.0129 8.00364C7.01062 8.26584 7.11141 8.51844 7.29357 8.70704L10.5866 12L7.29357 15.293C7.19806 15.3853 7.12188 15.4956 7.06947 15.6176C7.01706 15.7396 6.98947 15.8709 6.98832 16.0036C6.98717 16.1364 7.01247 16.2681 7.06275 16.391C7.11303 16.5139 7.18728 16.6255 7.28117 16.7194C7.37507 16.8133 7.48672 16.8876 7.60962 16.9379C7.73251 16.9881 7.86419 17.0134 7.99697 17.0123C8.12975 17.0111 8.26097 16.9836 8.38297 16.9311C8.50498 16.8787 8.61532 16.8026 8.70757 16.707L12.0006 13.414L15.2936 16.707C15.4822 16.8892 15.7348 16.99 15.997 16.9877C16.2592 16.9854 16.51 16.8803 16.6954 16.6949C16.8808 16.5095 16.986 16.2586 16.9882 15.9964C16.9905 15.7342 16.8897 15.4816 16.7076 15.293L13.4146 12L16.7076 8.70704C16.8897 8.51844 16.9905 8.26584 16.9882 8.00364C16.986 7.74144 16.8808 7.49063 16.6954 7.30522C16.51 7.11981 16.2592 7.01465 15.997 7.01237C15.7348 7.01009 15.4822 7.11088 15.2936 7.29304L12.0006 10.586L8.70757 7.29304Z"
+            fill="currentColor" />
+        </svg>
+      </button>
+      <div class="doctors-appointment__head">
+        <div class="doctors-appointment-panel">
+          <div class="doctors-appointment-panel__title">
+            Запись в клинику
+          </div>
+          <div class="doctors-appointment-panel__steps steps">
+            <div class="steps__item steps__item--current">
+              <div class="steps__item-num">1</div>
+              <div class="steps__item-title">Дата и время посещения</div>
+            </div>
+            <div class="steps__item">
+              <div class="steps__item-num">2</div>
+              <div class="steps__item-title">Услуга</div>
+            </div>
+            <div class="steps__item">
+              <div class="steps__item-num">3</div>
+              <div class="steps__item-title">Пациент</div>
+            </div>
+            <div class="steps__item">
+              <div class="steps__item-num">4</div>
+              <div class="steps__item-title">Подтверждение</div>
+            </div>
+          </div>
+        </div>
+        <div class="doctors-appointment-contacts">
+          <a href="#" class="doctors-appointment-contacts__item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12 2C7.58172 2 4 6.00258 4 10.5C4 14.9622 6.55332 19.8124 10.5371 21.6744C11.4657 22.1085 12.5343 22.1085 13.4629 21.6744C17.4467 19.8124 20 14.9622 20 10.5C20 6.00258 16.4183 2 12 2ZM12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z"
+                fill="#8798A5" />
+            </svg>
+            г. Санкт-Петербург, Серебристый бульвар, 20а
+          </a>
+          <a href="#" class="doctors-appointment-contacts__item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.5562 15.5477L14.1007 16.0272C14.1007 16.0272 13.0181 17.167 10.0631 14.0559C7.10812 10.9448 8.1907 9.80507 8.1907 9.80507L8.47752 9.50311C9.18407 8.75924 9.25068 7.56497 8.63424 6.6931L7.37326 4.90961C6.61028 3.8305 5.13596 3.68795 4.26145 4.60864L2.69185 6.26114C2.25823 6.71766 1.96765 7.30945 2.00289 7.96594C2.09304 9.64546 2.81071 13.259 6.81536 17.4752C11.0621 21.9462 15.0468 22.1239 16.6763 21.9631C17.1917 21.9122 17.6399 21.6343 18.0011 21.254L19.4217 19.7584C20.3806 18.7489 20.1102 17.0182 18.8833 16.312L16.9728 15.2123C16.1672 14.7486 15.1858 14.8848 14.5562 15.5477Z"
+                fill="#8798A5" />
+              <path
+                d="M17 12C19.7614 12 22 9.76142 22 7C22 4.23858 19.7614 2 17 2C14.2386 2 12 4.23858 12 7C12 7.79984 12.1878 8.55582 12.5217 9.22624C12.6105 9.4044 12.64 9.60803 12.5886 9.80031L12.2908 10.9133C12.1615 11.3965 12.6035 11.8385 13.0867 11.7092L14.1997 11.4114C14.392 11.36 14.5956 11.3895 14.7738 11.4783C15.4442 11.8122 16.2002 12 17 12Z"
+                fill="#8798A5" />
+            </svg>
+            +7 812 779-10-39
+          </a>
+        </div>
+      </div>
+      <div class="doctors-appointment__body">
+        <div class="doctors-appointment-services js-tabs">
+          <div class="doctors-appointment-services__inner">
+            <div class="doctors-appointment-services__tabs-btns">
+              <button type="button" class="doctors-appointment-services__tabs-btn js-tabs-btn is-active"
+                data-tab="1">Записаться к врачу</button>
+              <button type="button" class="doctors-appointment-services__tabs-btn js-tabs-btn" data-tab="2">Сдать
+                анализы</button>
+              <button type="button" class="doctors-appointment-services__tabs-btn js-tabs-btn" data-tab="3">Пройти
+                диагностику</button>
+              <button type="button" class="doctors-appointment-services__tabs-btn js-tabs-btn" data-tab="4">Вызвать
+                врача на дом</button>
+            </div>
+            <div class="doctors-appointment-services__tabs-content">
+              <div class="doctors-appointment-services__tabs-section js-tabs-section is-active" data-tab="1">
+                <div class="doctors-appointment-services__section">
+                  <div class="doctors-appointment-services__title">Выберите специальность:</div>
+                  <div class="doctors-appointment-services__list">
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">А</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Андролог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Аллерголог-иммунолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Анестезиолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Анестезиолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Анестезиолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Анестезиолог</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">Г</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Гастроэнтеролог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Гастроэнтеролог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Гастроэнтеролог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Гастроэнтеролог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Гепатолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Генетик</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Гинеколог</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">Д</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Дерматовенеролог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Дерматовенеролог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Дерматовенеролог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Дерматолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Диетолог</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">Д</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Кардиоревматолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Кардиохирург</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Кардиолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Косметолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Курортолог</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">Л</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Логопед</a>
+                        <a href="#" class="doctors-appointment-services__block-link">ЛОР-вра</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">М</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Маммолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Мануальный терапевт</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Мануальный терапевт</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Мануальный терапевт</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Мануальный терапевт</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Мануальный терапевт</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">Н</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Нарколог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Невролог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Нейрохирург</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Нефролог</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">О</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Онколог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Офтальмолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Ортодонт</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Ортопед</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">П</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Педиатр</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Пластический хирург</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Проктолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Психиатр</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Психолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Пульмонолог</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">Р</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Радиолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Ревматолог</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">С</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Сексолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Сосудистый хирург</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Стереотаксический радиохирург</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">Т</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Терапевт</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">У</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Уролог</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="doctors-appointment-services__tabs-section js-tabs-section" data-tab="2">
+                <div class="doctors-appointment-services__section">
+                  <div class="doctors-appointment-services__title">Выберите специальность:</div>
+                  <div class="doctors-appointment-services__list">
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">А</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Андролог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Аллерголог-иммунолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Анестезиолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Анестезиолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Анестезиолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Анестезиолог</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">Г</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Гастроэнтеролог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Гастроэнтеролог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Гастроэнтеролог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Гастроэнтеролог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Гепатолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Генетик</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Гинеколог</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">Д</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Дерматовенеролог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Дерматовенеролог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Дерматовенеролог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Дерматолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Диетолог</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">Н</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Нарколог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Невролог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Нейрохирург</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Нефролог</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">О</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Онколог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Офтальмолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Ортодонт</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Ортопед</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">П</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Педиатр</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Пластический хирург</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Проктолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Психиатр</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Психолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Пульмонолог</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">Р</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Радиолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Ревматолог</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">С</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Сексолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Сосудистый хирург</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Стереотаксический радиохирург</a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="doctors-appointment-services__tabs-section js-tabs-section" data-tab="3">
+                <div class="doctors-appointment-services__section">
+                  <div class="doctors-appointment-services__title">Выберите специальность:</div>
+                  <div class="doctors-appointment-services__list">
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">А</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Андролог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Аллерголог-иммунолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Анестезиолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Анестезиолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Анестезиолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Анестезиолог</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">Г</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Гастроэнтеролог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Гастроэнтеролог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Гастроэнтеролог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Гастроэнтеролог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Гепатолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Генетик</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Гинеколог</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">Д</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Дерматовенеролог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Дерматовенеролог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Дерматовенеролог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Дерматолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Диетолог</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">Д</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Кардиоревматолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Кардиохирург</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Кардиолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Косметолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Курортолог</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">Л</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Логопед</a>
+                        <a href="#" class="doctors-appointment-services__block-link">ЛОР-вра</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">М</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Маммолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Мануальный терапевт</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Мануальный терапевт</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Мануальный терапевт</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Мануальный терапевт</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Мануальный терапевт</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">Н</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Нарколог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Невролог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Нейрохирург</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Нефролог</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">Т</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Терапевт</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">У</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Уролог</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="doctors-appointment-services__tabs-section js-tabs-section" data-tab="4">
+                <div class="doctors-appointment-services__section">
+                  <div class="doctors-appointment-services__title">Выберите специальность:</div>
+                  <div class="doctors-appointment-services__list">
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">А</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Андролог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Аллерголог-иммунолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Анестезиолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Анестезиолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Анестезиолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Анестезиолог</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">М</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Маммолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Мануальный терапевт</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Мануальный терапевт</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Мануальный терапевт</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Мануальный терапевт</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Мануальный терапевт</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">Н</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Нарколог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Невролог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Нейрохирург</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Нефролог</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">О</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Онколог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Офтальмолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Ортодонт</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Ортопед</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">П</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Педиатр</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Пластический хирург</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Проктолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Психиатр</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Психолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Пульмонолог</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">Р</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Радиолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Ревматолог</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">С</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Сексолог</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Сосудистый хирург</a>
+                        <a href="#" class="doctors-appointment-services__block-link">Стереотаксический радиохирург</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">Т</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Терапевт</a>
+                      </div>
+                    </div>
+                    <div class="doctors-appointment-services__block">
+                      <div class="doctors-appointment-services__block-letter">У</div>
+                      <div class="doctors-appointment-services__block-links">
+                        <a href="#" class="doctors-appointment-services__block-link">Уролог</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer></footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="./js/airdatepicker.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

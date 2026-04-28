@@ -119,8 +119,33 @@ $(document).ready(function () {
 
   $("[data-fancybox]").fancybox({
     afterClose: function (instance, slide) {
-      // Проверяем, была ли нажата кнопка с data-scroll-to
     },
+    beforeLoad: function () {
+      $(document).on('click', '.js-tabs-btn', function (e) {
+        e.preventDefault(); 
+
+        const $btn = $(this);
+        const targetId = $btn.attr('data-tab');
+        const $container = $btn.closest('.js-tabs');
+
+        console.log('Нажали на таб:', targetId); 
+
+        
+        $container.find('.js-tabs-btn').removeClass('is-active');
+        $btn.addClass('is-active');
+
+  
+        $container.find('.js-tabs-section').removeClass('is-active').hide();
+
+        const $targetSection = $container.find('.js-tabs-section[data-tab="' + targetId + '"]');
+
+        if ($targetSection.length) {
+          $targetSection.addClass('is-active').show();
+        } else {
+          console.warn('Секция с data-tab="' + targetId + '" не найдена!');
+        }
+      });
+    }
   });
 
   $("[data-scroll-to]").on("click", function (e) {
