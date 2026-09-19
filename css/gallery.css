@@ -1,0 +1,16 @@
+.gallery__hor__item--video {
+  position: relative;
+  border: 5px solid #4D7565;
+}
+.gallery__hor__item--video .gallery__hor__item-label {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 40%;
+  pointer-events: none;
+}
+@media screen and (max-width: 767.98px) {
+  .gallery__hor__item--video .gallery__hor__item-label {
+    width: 180px;
+  }
+}/*# sourceMappingURL=gallery.css.map */
