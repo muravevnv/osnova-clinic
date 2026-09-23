@@ -542,6 +542,10 @@
 }
 
 .arfid-check {
+  .dir-section-heading {
+    max-width: 800px;
+  }
+  
   &__inner {
     display: grid;
     grid-template-columns: 420px 1fr;

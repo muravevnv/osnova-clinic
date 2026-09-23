@@ -519,6 +519,9 @@
   color: #91b83f;
 }
 
+.arfid-check .dir-section-heading {
+  max-width: 800px;
+}
 .arfid-check__inner {
   display: grid;
   grid-template-columns: 420px 1fr;
